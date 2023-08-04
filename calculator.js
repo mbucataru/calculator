@@ -79,7 +79,6 @@ function populateOperation(e)
                 if (firstNum != blank && secondNum != blank && operator != blank)
                 {
                     firstNum = operate(+firstNum, +secondNum, operator);
-                    console.log(firstNum, secondNum, operator);
                     display.textContent = `${firstNum}`;
                     secondNum = blank;
                     operator = blank;
@@ -90,10 +89,7 @@ function populateOperation(e)
             {
                 if (firstNum != blank && secondNum != blank && operator != blank)
                 {
-                    console.log("the thing i am expecting happens");
-                    console.log(firstNum, secondNum, operator);
                     firstNum = operate(+firstNum, +secondNum, operator);
-                    console.log(firstNum, secondNum, operator);
                     display.textContent = `${firstNum}`;
                     secondNum = blank;
                     operator = blank;
